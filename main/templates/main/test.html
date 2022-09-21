@@ -1,0 +1,88 @@
+{% extends "main/base.html" %}
+{% block title %}Test{% endblock %}
+
+
+{% block content %}
+<h1>This page tests html code</h1>
+<h2>Header 2</h2>
+<p>Paragraph with: <br>
+    <b>Bold</b>
+    <strong>Strong</strong>
+    <i>Italic</i>
+    <u>Underscore</u>
+    <em>Emphasis</em>
+</p>
+<p align="right">
+    This paragraph is aligned to the right
+    <hr>
+    And has a breakline
+</p>
+<br> <!-- Komentar -->
+<h2>Lists</h2>
+<p>Unorderd list</p>
+<ul>
+    <li>Bullet a</li>
+    <li>Bullet b</li>
+</ul>
+<p>Orderd list</p>
+<ol>
+    <li>Number 1</li>
+    <li>Number 2</li>
+</ol>
+<br>
+<h2>Tables</h2>
+<table border="1">
+    <tr><th colspan="2">People</th></tr>
+    <tr><th>Name</th><th>Age</th></tr>
+    <tr><td>Oscar</td><td>18</td></tr>
+    <tr><td>Vilde</td><td rowspan="2">19</td></tr>
+    <tr><td>Amalie</td></tr>
+</table>
+<br>
+<h1>Forms</h1>
+<form>
+    <label for="name">Navn</label>
+    <input type="text" id="name" placeholder="Ditt navn">
+    <br>
+    <label for="email">Epost</label>
+    <input type="email" id="email" placeholder="navn@domene.side">
+    <br>
+    <label for="phone">Telefon nummer</label>
+    <input type="tel" id="phone" placeholder="Ditt telefon nummer">
+    <br><br>
+    <input type="checkbox" id="student"><label for="student">Student</label><br>
+    <input type="checkbox" id="glad"><label for="glad">Er glad</label><br><br>
+    <h3>Kjønn</h3>
+    <input type="radio" name="gender" id="man"><label for="man">Mann</label>
+    <input type="radio" name="gender" id="woman"><label for="woman">Kvinne</label>
+    <br><br>
+    <label for="notes">Notater</label><br>
+    <textarea id="notes">hello</textarea><br><br>
+    <label for="color">Hva er fargen på personligheten din</label><br>
+    <select id="color">
+        <option>Blå</option>
+        <option>Rød</option>
+        <option>Grønn</option>
+    </select><br><br>
+    <label for="click"></label>
+    <button id="click">Click meg!</button><br>
+    <input type="button" value="Send">
+    <input type="button" value="Reset"><br>
+</form><br>
+<table border="1">
+    <tr><th colspan="2">Spesielle karakterer i HTML</th></tr>
+    <tr><th>Symbolet</th><th>Koden</th></tr>
+    <tr><td align="center">&lt;</td><td align="center">&amp;lt;</td></tr>
+    <tr><td align="center">&gt;</td><td align="center">&amp;gt;</td></tr>
+    <tr><td align="center">&quot;</td><td align="center">&amp;quot;</td></tr>
+    <tr><td align="center">&apos;</td><td align="center">&amp;apos;</td></tr>
+    <tr><td align="center">&amp;</td><td align="center">&amp;amp;</td></tr>
+    <tr><td align="center">Nonbreaking&nbsp;space</td><td align="center">&amp;nbsp;</td></tr>
+</table><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NYktbp1WFS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br><br><br>
+<h1>This part test CSS</h1>
+<p style="color: red; font-size: 12px">This text is red and small</p>
+<p class="big_blue">This text is blue and big</p>
+
+{% endblock %}
