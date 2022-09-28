@@ -3,6 +3,7 @@
 
 
 {% block content %}
+{% load static %}
 <h1>This page tests html code</h1>
 <h2>Header 2</h2>
 <p>Paragraph with: <br>
@@ -83,6 +84,7 @@
 <br><br><br><br>
 <h1>This part test CSS</h1>
 <p style="color: red; font-size: 12px">This text is red and small</p>
-<p class="big_blue">This text is blue and big</p>
+<p class="blue">This text is blue and big</p>
+<img src="{% static 'main/images/codecode.jpg' %}" alt="Hello" width="50%">
 
 {% endblock %}
