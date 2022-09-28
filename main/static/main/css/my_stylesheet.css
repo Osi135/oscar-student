@@ -1,0 +1,9 @@
+body {
+  background-color: lightblue;
+  font-family: verdana;
+}
+
+.blue {
+    color: blue;
+    font-size: 64px;
+}
