@@ -4,8 +4,9 @@
 
 {% block content %}
 {% load static %}
-<h1>This page tests html code</h1>
+<h1>This page tests html, css and java-script</h1>
 <h2>Header 2</h2>
+
 <p>Paragraph with: <br>
     <b>Bold</b>
     <strong>Strong</strong>
@@ -18,6 +19,19 @@
     <hr>
     And has a breakline
 </p>
+
+<p class="text1">Here is some generic text for css styling. <br>
+    It is heavily styled with css.
+</p>
+<div class="box1">
+    <p class="box-content1">
+        This is box1
+    </p>
+    <p class="box-content2">
+        This is box2
+    </p>
+</div>
+
 <br> <!-- Komentar -->
 <h2>Lists</h2>
 <p>Unorderd list</p>
@@ -82,9 +96,7 @@
 </table><br><br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NYktbp1WFS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br><br><br>
-<h1>This part test CSS</h1>
 <p style="color: red; font-size: 12px">This text is red and small</p>
 <p class="blue">This text is blue and big</p>
-<img src="{% static 'main/images/codecode.jpg' %}" alt="Hello" width="50%">
-
+<img src="{% static 'main/img/codecode.jpg' %}" alt="Hello" width="50%">
 {% endblock %}

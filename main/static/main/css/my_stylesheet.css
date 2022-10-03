@@ -1,9 +1,92 @@
+
 body {
-  background-color: lightblue;
-  font-family: verdana;
+    background-color: lightblue;
+    font-family: verdana;
 }
 
 .blue {
     color: blue;
     font-size: 64px;
 }
+
+.text1 {
+    color: #402070;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:  italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: overline black;
+    text-shadow: 3px 2px 3px red, -2px -1px 2px rebeccapurple;
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+
+}
+
+.box1  {
+    border: 3px solid red;
+    width: 50%;
+}
+.box-content1 {
+    margin: 5px 10px 5px 10px;
+    padding: 4px 7px 4px 7px;
+    border: 3px dashed black;
+    box-sizing: border-box;
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+    background-image: url('/static/project/img/python_server.jpg');
+    background-size: 400px 300px;
+}
+.box-content2 {
+    margin: 5px 10px 5px 10px;
+    padding: 4px 7px 4px 7px;
+    border: 3px groove black;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+nav li {
+    display: inline;
+}
+nav a {
+    outline: none;
+    text-decoration: none;
+    display: inline_block;
+    margin-left: 1%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width:31%;
+    color: white;
+    background-color: #9090c0;
+}
+nav a:hover {
+    background: #b0b0d0;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+}
+.special {
+    flex: 2;
+}
+img {
+    position: ;
+    float: right;
+    position: relative;
+    right: 100px;
+}
+
