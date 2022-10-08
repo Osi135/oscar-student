@@ -6,3 +6,6 @@ def home(response):
 
 def test(response):
     return render(response, "main/test.html", {})
+
+def calculator(response):
+    return render(response, "main/calculator.html", {})

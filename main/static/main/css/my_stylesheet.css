@@ -38,7 +38,9 @@ body {
     height: 300px;
     border-radius: 30px;
     background-image: url('/static/project/img/python_server.jpg');
-    background-size: 400px 300px;
+    background-size: 200px 150px;
+    background-repeat: repeat;
+    background-position: center center;
 }
 .box-content2 {
     margin: 5px 10px 5px 10px;
@@ -48,6 +50,67 @@ body {
     height: 100px;
     border-radius: 10px;
     background-color: aqua;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    list-style-image: url('/static/project/img/Sprite.png');
+}
+
+a:hover {
+    color: green;
+    background-color: yellow;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 20%;
+}
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+th {
+    background-color: #9090c0;
+}
+tr:nth-child(even) {
+    background-color: darkkhaki;
+}
+input[type='text'], input[type='email'], input[type='tel'] {
+    border: 1px solid rgb(200, 64, 12);
+    width: 15%;
+    padding: 5px;
+    color:darkorchid;
+    font-weight: bold;
+}
+input[type='button'] {
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+}
+input[type='button']:hover {
+    background-color: greenyellow;
+}
+label {
+    font-weight: bold;
+    color: rgb(24, 15, 80);
+}
+.block {
+    background-color: red;
+    border: 1px solid blue;
+    padding: 5px;
+    display: inline;
+}
+.inline {
+    background-color: yellow;
+    border: 1px dashed black;
+    display: block;
 }
 
 nav li {
@@ -84,9 +147,38 @@ article {
     flex: 2;
 }
 img {
-    position: ;
     float: right;
     position: relative;
     right: 100px;
+    bottom: 50px;
+    z-index: 1;
+}
+.relative {
+    position: relative;
+    left: 20px;
+    bottom: 40px;
+}
+.absolute {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+}
+.fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    z-index: 0;
+    
+}
+.field {
+    border-radius: 15px;
+    border: 2px solid #3c4043;
+    font-size: 18px;
+    line-height: 1.5;
+    outline: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px 10px 5px 10px;
+    background-color: #303134;
 }
 
