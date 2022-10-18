@@ -4,19 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title%}Oscar's Website{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'main/css/my_stylesheet.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'project/img/favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'project/css/base.css' %}">
+    {% block head_content %}
+    {% endblock %}
 </head>
 <body>
     <header>
-        <h1>Oscar Horn Roostami - It student UIO</h1>
+        <h1>Oscar Horn Roostami</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/test">Test</a></li>
+                <li><a href="/calculator">Calculator</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>Contact</p>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/test">Test</a></li>
-            <li><a href="/calculator">Calculator</a></li>
-        </ul>
-    </nav>
 
 {% block content %}
 

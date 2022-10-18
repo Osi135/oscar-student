@@ -1,0 +1,36 @@
+* {
+    border: dotted black 1px;
+}
+body {
+    background-color: rgb(174, 199, 220);
+    margin: 0px;
+    font-family: verdana;
+}
+header {
+    display: flex;
+    background-color: aliceblue;
+}
+h1 {
+    flex: 1;
+    
+}
+nav {
+    width: max-content;
+    flex: 2;
+}
+nav ul {
+    display: flex;
+    margin-top: 30px;
+}
+nav li {
+    flex: 1;
+    display: inline;
+}
+header div {
+    flex: 1;
+}
+header div p {
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 30px;
+}

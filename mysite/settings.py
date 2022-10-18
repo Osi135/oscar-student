@@ -29,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent # Original
 SECRET_KEY = "django-insecure-5llrf%nrtfn8np^gs@*ys8@p+y9h83rqob4k_2$d1e5istjmd5"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'oscar-hr.herokuapp.com']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "whitenoise.runserver_nostatic",
     "main.apps.MainConfig",
 ]
 
@@ -88,6 +89,9 @@ DATABASES = {
     }
 }
 
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -129,5 +133,10 @@ STATIC_ROOT = BASE_DIR / "staticfiles" # Alternative from whitenoise
 
 #STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'), )
 STATICFILES_DIRS = [BASE_DIR / "static/",]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL = '/media/'
 
 django_heroku.settings(locals())

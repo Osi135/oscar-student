@@ -1,6 +1,11 @@
 {% extends "main/base.html" %}
 {% block title %}Test{% endblock %}
 
+{% block head_content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/test.css' %}">
+{% endblock %}
+
 
 {% block content %}
 {% load static %}
@@ -12,6 +17,12 @@
     <i>Italic</i>
     <u>Underscore</u>
     <em>Emphasis</em>
+    <big>Big</big>
+    <small>Small</small>
+    <sub>Subscripted</sub>
+    <sup>Superscripted</sup>
+    <ins>Inserted</ins>
+    <del>Deleted</del>
 </p>
 <p align="right">
     This paragraph is aligned to the right
